@@ -1,0 +1,1 @@
+{"v": "5.12.1", "layers": [{"nm": "Main Stroke width - Color Ctrl", "ef": [{"ty": 5, "nm": "Highlight", "np": 3, "mn": "ADBE Color Control", "ix": 4, "en": 1, "ef": [{"ty": 2, "nm": "Color", "mn": "ADBE Color Control-0001", "ix": 1, "v": {"a": 0, "k": [1, 1, 0, 1], "ix": 1, "x": "var $bm_rt;\n$bm_rt = effect('Highlight')('Color');"}}]}]}]}

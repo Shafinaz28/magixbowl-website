@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Website Designing Services | Custom Web Design Solutions</title>
+    <meta name="description"  content="Get high-quality, responsive website designing services tailored to your brand. From business websites to e-commerce platforms, we deliver stunning and functional designs." />
+    <meta name="keywords" content="website designing services, web design company, custom website design, responsive web design, e-commerce website design, UI/UX design, business website development, professional web design">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+    <script src="./gsap.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
+    <link rel="canonical" href="https://www.magixbowl.com/web-designing.html">
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="Wyv2uc5tLOgY-W5vRThgeeX0tGx6E79X3e9fH5gAhV4" />
+    <!-- End Google Search Console -->
+    
+    <!-- Google tag (gtag.js)Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WFC5XGWR6F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-WFC5XGWR6F');
+    </script>
+     <!-- Google tag (gtag.js)Analytics -->
+     
+     <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KWNFRHT8');</script>
+    <!-- End Google Tag Manager -->
+     
+     <!--Schema.org -->
+            <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://www.magixbowl.com/"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Services",
+                      "item": "https://www.magixbowl.com/services/"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "SEO",
+                      "item": "https://www.magixbowl.com/web-designing.html"
+                    }
+                  ]
+                }
+            </script>
+
+        <!--End Schema.org -->
+        
+        <!--favicon--->
+        <link rel="shortcut icon" href="assects/magixbowl-logo.jpg">
+         <!--favicon--->
+</head>
+<style>
+    /* Loader Fullscreen */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Spinner Style */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+</style>
+<script>
+    window.addEventListener('load', () => {
+  // Hide loader
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('content');
+
+  loader.style.display = 'none';
+  content.style.display = 'block';
+});
+
+</script>
+
+
+
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWNFRHT8"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+    <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+
+    <header class="header">
+        <nav>
+            <a class="logo" href="./index.html"><img src="./assects/logo.png" alt="Logo"></a>
+            <button class="menu-btn" id="menu-btn">☰</button>
+            <ul class="menu">
+                <li class="nav1" ><a href="./index.html">Home</a></li>
+                <li class="nav2" ><a href="./about.html">About Us</a></li>
+                <li class="nav3" ><a href="./services.html">Our Services</a></li>
+                <li class="nav4" ><a href="#gallery">Gallery</a></li>
+                <li class="nav5" 
+                    style="background-color: #e74c3c; border-radius: 5px; height: 40px; width: 120px; display: flex; align-items: center; justify-content: center;">
+                    <a style="color: white; font-weight: 600;" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu" id="mobile-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Our Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-title">
+        <h1 class="page-title-heading">UI/UX Design Services</h1>
+        <p class="page-title-breadcrumb">Home / UI/UX Design</p>
+    </div>
+    
+    <br><br>
+    <br><br>
+    
+    <section class="section">
+        <div class="section-header">
+          <div>
+            <h3>HOW IT WORKS</h3>
+            <h1>Step by Step <span class="highlight">guide</span> to<br />Exceptional UI/UX Design</h1>
+          </div>
+          <p>
+            Our process ensures a seamless user experience by focusing on user research, wireframing, prototyping, testing, and final design implementation, resulting in intuitive and visually appealing interfaces.
+          </p>
+        </div>
+    
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-title">User Research</div>
+            <div class="step-desc">
+              We analyze user behavior and needs to create a design that enhances engagement and usability.
+            </div>
+          </div>
+    
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-title">Wireframing & Prototyping</div>
+            <div class="step-desc">
+              We create wireframes and interactive prototypes to visualize and refine the user journey.
+            </div>
+          </div>
+    
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-title">User Testing</div>
+            <div class="step-desc">
+              We conduct usability tests to ensure the design is user-friendly and effective.
+            </div>
+          </div>
+    
+          <div class="step">
+            <div class="step-number">04</div>
+            <div class="step-title">Final Design & Implementation</div>
+            <div class="step-desc">
+              We deliver a fully optimized, aesthetically pleasing, and functional UI/UX design.
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="benefits-section section">
+        <div class="benefits-text">
+          <h3>Company Benefits</h3>
+          <h1>Maximizing growth with expert <span class="highlight">UI/UX Design</span></h1>
+          <p>
+            Elevate your digital presence with our UI/UX design services. We focus on enhancing user experience, improving engagement, and creating visually stunning interfaces that captivate your audience.
+          </p>
+      
+          <div class="benefits-bullets">
+            <div><span class="circle"></span> Improved User Engagement</div>
+            <div><span class="circle"></span> Enhanced User Satisfaction</div>
+          </div>
+        </div>
+      
+        <div class="benefits-image">
+          <img src="./assects/uiux.jpg" alt="Team working on UI/UX design" />
+        </div>
+      
+        <div class="benefits-footer">
+          <div class="benefit-item">
+            <div class="benefit-icon">🎨</div>
+            <div class="benefit-title">Intuitive Design</div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">📊</div>
+            <div class="benefit-title">Data-Driven Approach</div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🚀</div>
+            <div class="benefit-title">Seamless User Experience</div>
+          </div>
+        </div>
+    </section>
+    
+
+
+ 
+
+
+
+
+    <div class="nf">
+      <section class="footertwo-hero">
+          <div class="footertwo-hero-content">
+              <h1>Want to hook better leads with hard-working digital marketing?</h1>
+              <button  onclick="document.querySelector('.modal-overlay').style.display='flex'" class="footertwo-cta-button">GET A FREE CONSULTATION NOW</button>
+          </div>
+      </section>
+  
+  <style>
+       .show-modal {
+        color: #fff;
+        background: linear-gradient(to right, #33a3ff, #0675cf, #49a6fd);
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 200px auto 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+  
+      .show-modal:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+  
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+  
+      .modal-box {
+        background: #fff;
+        width: 90%;
+        max-width: 500px;
+        padding: 60px 40px 40px;
+        border-radius: 8px;
+        position: relative;
+        animation: fadeIn 0.3s ease;
+      }
+  
+      @keyframes fadeIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+      }
+  
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background:#ffb600;
+        color: black;
+        border: none;
+        border-radius: 50%;
+        font-size: 18px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+  
+      .title {
+        color: #ffb600;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+  
+      .description {
+        text-align: center;
+        color: #9A9EA9;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+  
+      .form-group {
+        position: relative;
+        margin-bottom: 20px;
+      }
+  
+      .input-icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: #777;
+        pointer-events: none;
+      }
+  
+      .form-control {
+        width: 100%;
+        padding: 10px 10px 10px 45px;
+        font-size: 16px;
+        border: 2px solid #eee;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+      }
+  
+      .form-control::placeholder {
+        color: #AEAFB1;
+      }
+  
+      .checkbox-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: #9A9EA9;
+        margin-bottom: 20px;
+      }
+  
+      .checkbox-group input[type="checkbox"] {
+        margin-right: 5px;
+      }
+  
+      .forgot-pass {
+        color: #7F7FD5;
+        text-decoration: none;
+      }
+  
+      .forgot-pass:hover {
+        text-decoration: underline;
+        color: #9A9EA9;
+      }
+  
+      .btn-submit {
+        background: #ffb600;
+        color: black;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+  
+      .btn-submit:hover {
+        letter-spacing: 1px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+  
+      @media (max-width: 480px) {
+        .modal-box {
+          padding: 60px 20px 40px;
+        }
+      }
+  </style>
+  <div class="modal-overlay">
+      <div class="modal-box">
+        <button class="close" onclick="document.querySelector('.modal-overlay').style.display='none'">×</button>
+        <h3 class="title">Get Free Consultation</h3>
+        <p class="description">Fill in your details and we'll get back to you</p>
+    
+        <div class="form-group">
+          <span class="input-icon"><i class="fa fa-user"></i></span>
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+    
+        <div class="form-group">
+          <span class="input-icon"><i class="fa fa-envelope"></i></span>
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+    
+        <div class="form-group">
+          <span class="input-icon"><i class="fa fa-phone"></i></span>
+          <input type="tel" class="form-control" placeholder="Phone Number">
+        </div>
+    
+        <div class="form-group">
+          <span class="input-icon"><i class="fa fa-comment"></i></span>
+          <textarea class="form-control" placeholder="Your Message"></textarea>
+        </div>
+    
+        <button class="btn-submit">Submit</button>
+      </div>
+    </div>
+  
+    <script>
+      // Get the overlay
+      const modalOverlay = document.querySelector('.modal-overlay');
+    
+      // Close modal on click outside modal-box
+      modalOverlay.addEventListener('click', function (e) {
+        if (e.target === modalOverlay) {
+          modalOverlay.style.display = 'none';
+        }
+      });
+    
+      // Example: open modal (attach this to a button with class 'show-modal')
+      document.querySelector('.show-modal')?.addEventListener('click', function () {
+        modalOverlay.style.display = 'flex';
+      });
+    </script>
+    
+    
+      <!-- Footer -->
+      <footer class="footertwo-footer">
+          <div class="footertwo-footer-container">
+              <!-- Contact Info -->
+              <div>
+                  <div class="footertwo-logo">
+                      <div class="footertwo-logo-circle">
+                          <img style="width: 100%;" src="./assects/logo.png" alt="">
+                      </div>
+                  </div>
+                  <p>
+                      105, above Prasad Netralaya, 2nd Cross Rd, Chandra Layout, Govindaraja Nagar Ward, Widia Layout,
+                      Attiguppe, Bengaluru, Karnataka 560040
+                  </p><br>
+                  <p>Email Id  :<b  style="color:#ffb600;"> hello@magixbowl.com</b></p>
+                  <p>Phone No. :<b  style="color:#ffb600;"> +91 7996316333</b></p>
+                  <div class="footertwo-social-icons">
+                      <a href="https://www.facebook.com/magixbowl2025" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://x.com/MagixBowl" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                      <a href="https://in.pinterest.com/magixbowl/" aria-label="pinterest"><i class="fab fa-pinterest"></i></a>
+                      <a href="https://www.instagram.com/magixbowl" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/@magixbowl" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                      <a href="https://www.linkedin.com/company/magixbowl/" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              
+              <div>
+                  <h3>QUICK LINKS</h3>
+                  <ul>
+                      <li><a href="./about.html">About Us</a></li>
+                      <li><a href="./services.html">Services We Offer</a></li>
+                      <li><a href="./blogs/">Blogs</a></li>
+                      <!-- <li><a href="#">Our Expert Team</a></li>
+                      <li><a href="#">Our Projects</a></li> -->
+                      <li><a href="./contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+              <!-- Newsletter Signup -->
+              <div>
+                  <h3>WANT OUR BEST MARKETING TIPS?</h3>
+                  <p>We send out our best strategies in a juicy weekly newsletter. Only value, no crap.</p>
+                  <form class="footertwo-newsletter-form">
+                      <input type="email" placeholder="Your E-mail" required />
+                      <button type="submit">SIGN UP</button>
+                  </form>
+              </div>
+          </div>
+          <div class="footertwo-footer-bottom">
+              <p>© 2025 MagixBowl · All rights reserved.<a href="#"> Privacy</a></p>
+          </div>
+      </footer>
+  </div>
+  
+  </body>
+  <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+  });
+  
+  </script>
+  
+  </html>
