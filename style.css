@@ -161,9 +161,13 @@ nav img {
 /* 2 */
 
 .blue-hero {
-  background:orange; /* remove background image, keep clean */
-  padding: 80px 20px;
+  padding: 10px 20px;
+  background-image: url(./assects/77.jpg);
+  background-size: cover;      /* makes image cover full area */
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat;
 }
+
 
 .blue-hero-container {
   max-width: 1200px;
@@ -181,13 +185,13 @@ nav img {
 }
 
 .blue-hero-text h1 span {
-  color: rgb(24, 24, 116);
+  color: #ffb600
 }
 
 .blue-hero-text h2 {
   font-size: 1.8rem;
   margin: 15px 0;
-  color: rgb(28, 28, 148);
+  color: #ffb600
 }
 
 /* Typing Effect */
@@ -213,17 +217,18 @@ nav img {
 }
 
 .btn-blue {
-  background: rgb(28, 28, 148);
-  color: #fff;
+  background: #ffb600;
+  color:black;
   padding: 12px 25px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
+  
 }
 
 .btn-blue:hover {
-  background: rgb(18, 18, 108);
+  background: white;
 }
 
 .btn-outline {
@@ -231,14 +236,14 @@ nav img {
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  border: 1px solid rgb(28, 28, 148);
-  color: rgb(28, 28, 148);
+  border: 1px solid black;
+  color: black;
   background: transparent;
   transition: 0.3s;
 }
 
 .btn-outline:hover {
-  background: rgba(8, 4, 71, 0.8);
+  background: #ffb600 ;
   color: #fff;
 }
 
@@ -296,7 +301,7 @@ nav img {
 
 .about {
   font-family: Arial, sans-serif;
-  padding: 80px 20px;
+  padding: 30px 20px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -332,10 +337,8 @@ nav img {
 
 .services-box {
   flex: 3;
-  padding: 20px;
+ 
   background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .services-box h3 {
